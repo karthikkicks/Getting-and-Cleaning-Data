@@ -1,0 +1,10 @@
+---
+title: "README"
+author: "Lakshmanan Arasakumar"
+---
+
+All the data loading and transformations are done through a single script called 'run_analysis.R'. Load the given data set into the workspace and place the 'run_analysis.R' script in the workspace. Edit the workspace in the script by replacing the path of your workspace in the variable 'workDir'. Then run the script in R and you will get the text file 'tidyData.txt' as the output in your workspace. Following are the transformations done on the data and a tidy data set is created.
+
+
+####Transformations
+All the test and training data files are read separately in different data frames. All these test and training data are merged together to create one single data set in each data frames respectively. Then, observations that contain only mean and standard deviation values are extracted, then everything was put into a single data frame called 'tidyData' and sorted with the subject id. This is then written to a text file called 'tidyData.txt'.
